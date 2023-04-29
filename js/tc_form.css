@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.tc__form_container {
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.tc_form_input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.tc_form_input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.tc-submit {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+}
+.tc_form_submitbtn {
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    height:40px;
+    font-weight:700;
+}
+.tc-msg{
+    display:none;
+    margin-top:15px;
+}
+.tc_form_submitbtn:hover {
+    opacity: 1;
+}
+
+@keyframes tc-spin {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+.tc-spin div {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 15px solid #f8f8f8;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.tc-spin div {
+  animation: tc-spin 1s linear infinite;
+  top: 50px;
+  left: 50px
+}
+.tc-form-loading {
+  width: 30px;
+  height: 30px;
+  display: none;
+  overflow: hidden;
+  background: none;
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+.tc-spin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.3);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.tc-spin div { box-sizing: content-box; }
